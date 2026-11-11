@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solana-anchor-space"
+version = "0.1.0"
+description = "High-performance CLI & static analysis toolkit for Solana & Anchor account space & rent optimization"
+readme = "README.md"
+authors = [{ name = "Brad Wu", email = "aurelis.work@gmail.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Build Tools",
+]
+keywords = ["solana", "anchor", "blockchain", "web3", "cli", "rent-exemption"]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+anchor-space = "anchor_space.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/bradwue313/solana-anchor-space-cli"
+"Bug Tracker" = "https://github.com/bradwue313/solana-anchor-space-cli/issues"
